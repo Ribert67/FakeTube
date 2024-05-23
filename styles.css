@@ -1,52 +1,57 @@
-body {
-    font-family: Arial, sans-serif;
+body, html {
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
 }
 
-header {
+.container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #ff0000;
-    padding: 10px 20px;
-    color: white;
 }
 
-.logo {
-    font-size: 24px;
-    font-weight: bold;
+.sidebar {
+    width: 250px;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
 }
 
 .search-bar {
-    display: flex;
-    flex-grow: 1;
-    margin: 0 20px;
+    margin-bottom: 20px;
 }
 
 .search-bar input {
-    flex-grow: 1;
-    padding: 5px;
-    border: none;
-    border-radius: 2px;
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
 .search-bar button {
-    padding: 5px 10px;
+    padding: 10px 20px;
+    background-color: #ff0000;
     border: none;
-    background-color: #333;
-    color: white;
-    border-radius: 2px;
+    color: #fff;
+    border-radius: 5px;
     cursor: pointer;
-}
-
-.user-profile {
-    cursor: pointer;
-}
-
-main {
-    padding: 20px;
 }
 
 .video-grid {
@@ -56,7 +61,7 @@ main {
 }
 
 .video {
-    width: 210px;
+    width: 30%; /* Adjust as needed */
 }
 
 .video img {
@@ -65,6 +70,6 @@ main {
 }
 
 .video-title {
-    font-size: 16px;
     margin-top: 5px;
+    font-size: 16px;
 }
