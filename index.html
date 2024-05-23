@@ -3,35 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YouTube Clone</title>
+    <title>FakeTube</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="logo">MyYouTube</div>
-        <div class="search-bar">
-            <input type="text" placeholder="Search">
-            <button>Search</button>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <h2>FakeTube</h2>
+            <!-- Navigation Links -->
+            <ul>
+                <li>Home</li>
+                <li>Trending</li>
+                <li>Subscriptions</li>
+                <li>Library</li>
+            </ul>
         </div>
-        <div class="user-profile">Profile</div>
-    </header>
-    <main>
-        <div class="video-grid">
-            <!-- Video Thumbnails and Titles will go here -->
-            <div class="video">
-                <img src="https://via.placeholder.com/210x118" alt="Video Thumbnail">
-                <div class="video-title">Sample Video 1</div>
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Search Bar -->
+            <div class="search-bar">
+                <input type="text" placeholder="Search">
+                <button>Search</button>
             </div>
-            <div class="video">
-                <img src="https://via.placeholder.com/210x118" alt="Video Thumbnail">
-                <div class="video-title">Sample Video 2</div>
+            <!-- Video Thumbnails -->
+            <div class="video-grid">
+                <!-- Generate Thumbnails and Titles Dynamically -->
+                <!-- Thumbnail 1 -->
+                <div class="video">
+                    <img src="thumbnail1.jpg" alt="Video Thumbnail">
+                    <div class="video-title">Random Video Title 1</div>
+                </div>
+                <!-- Thumbnail 2 -->
+                <div class="video">
+                    <img src="thumbnail2.jpg" alt="Video Thumbnail">
+                    <div class="video-title">Random Video Title 2</div>
+                </div>
+                <!-- Thumbnail 3 -->
+                <div class="video">
+                    <img src="thumbnail3.jpg" alt="Video Thumbnail">
+                    <div class="video-title">Random Video Title 3</div>
+                </div>
+                <!-- Add more video blocks as needed -->
             </div>
-            <div class="video">
-                <img src="https://via.placeholder.com/210x118" alt="Video Thumbnail">
-                <div class="video-title">Sample Video 3</div>
-            </div>
-            <!-- Add more video blocks as needed -->
         </div>
-    </main>
+    </div>
 </body>
 </html>
